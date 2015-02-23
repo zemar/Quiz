@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "BNRQuizViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+
+    BNRQuizViewController *quizVC = [[BNRQuizViewController alloc] init];
+    self.window.rootViewController = quizVC;
+    
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
