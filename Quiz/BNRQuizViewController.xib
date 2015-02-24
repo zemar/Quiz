@@ -6,6 +6,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BNRQuizViewController">
             <connections>
+                <outlet property="answerLabel" destination="f36-L2-Kbd" id="XLJ-VI-3BU"/>
+                <outlet property="questionLabel" destination="hcE-Kv-iAu" id="4TR-D9-tkq"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="s4E-be-A8g"/>
             </connections>
         </placeholder>
@@ -20,7 +22,7 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                     <variation key="widthClass=compact" fixedFrame="YES">
-                        <rect key="frame" x="91" y="70" width="218" height="21"/>
+                        <rect key="frame" x="0.0" y="70" width="400" height="21"/>
                     </variation>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f36-L2-Kbd">
@@ -29,28 +31,36 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                     <variation key="widthClass=compact" fixedFrame="YES">
-                        <rect key="frame" x="186" y="346" width="29" height="21"/>
+                        <rect key="frame" x="0.0" y="346" width="400" height="21"/>
                     </variation>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDF-zy-Hto">
                     <rect key="frame" x="248" y="113" width="105" height="30"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="Show Question">
                         <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
                     </state>
                     <variation key="widthClass=compact" fixedFrame="YES">
-                        <rect key="frame" x="148" y="113" width="105" height="30"/>
+                        <rect key="frame" x="27" y="113" width="346" height="30"/>
                     </variation>
+                    <connections>
+                        <action selector="showQuestion:" destination="-1" eventType="touchUpInside" id="fvN-gi-oQc"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAf-ay-CyW">
                     <rect key="frame" x="253" y="395" width="94" height="30"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="Show Answer"/>
                     <variation key="widthClass=compact" fixedFrame="YES">
-                        <rect key="frame" x="153" y="395" width="94" height="30"/>
+                        <rect key="frame" x="27" y="394" width="346" height="30"/>
                     </variation>
+                    <connections>
+                        <action selector="showAnswer:" destination="-1" eventType="touchUpInside" id="j9d-Vm-ldq"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <point key="canvasLocation" x="323" y="383"/>
+            <point key="canvasLocation" x="289" y="383"/>
         </view>
     </objects>
 </document>

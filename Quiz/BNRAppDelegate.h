@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  BNRAppDelegate.h
 //  Quiz
 //
 //  Created by mike on 2/22/15.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface BNRAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
